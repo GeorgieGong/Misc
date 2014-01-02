@@ -1,0 +1,63 @@
+\documentclass[ima, 20pt, portrait, plainboxedsections]{sciposter}
+
+% Packages
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{times}
+\usepackage{amsmath,amssymb}
+\usepackage{multicol}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{algorithmic}
+
+% TEMPLATE PARAMETERS
+\setlength{\parskip}{0.002\textheight}
+\newcommand{\imsize}{0.49\columnwidth}
+\definecolor{BoxCol}{rgb}{0.4,0.4,0.4}
+\definecolor{SectionCol}{rgb}{1,1,1}
+\renewcommand{\titlesize}{\Huge}
+\renewcommand{\sectionsize}{\Large}
+\setmargins[2cm]
+
+% HEADER
+\setlength{\titlewidth}{0.5\textwidth}
+\setlength{\logowidth}{0.25\textwidth}
+
+\leftlogo[0.9]{kaust_cuq_logo_left}
+\rightlogo[0.95]{kaust_cuq_logo_right}
+%\leftlogo[0.7]{kaust}
+
+% POSTER CONTENT
+
+\title{This is the title}
+
+\author{Author One, Author Two and Author Three}
+\institute{Computer, Electrical and Mathematical Sciences \& Engineering Division\\ King Abdullah University of Science and Technology (KAUST), Saudi Arabia}
+\email{\{Author1,Author2,Author3\}@kaust.edu.sa}
+
+\begin{document}
+
+\maketitle
+
+\begin{multicols}{3}
+% the kaust-compliant gray colour
+% TODO: find a way to put this into sciposter.cls
+\def\columnseprulecolor{\color[rgb]{0.501,0.463,0.435}}
+
+
+\section*{Abstract} 
+%-------------
+\section*{Section}
+\subsection*{Subsection}
+%-------------
+
+\section*{Acknowledgements}
+The authors are members of the KAUST SRI Center for Uncertainty Quantification in Computational Science and Engineering.
+
+%\footnotesize
+%\bibliographystyle{abbrv}
+%\bibliography{references}
+
+\end{multicols}
+\end{document}
+ 

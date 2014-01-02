@@ -4,5 +4,10 @@
 *.py~
 *.#*
 *.md~
+*.synctex.gz
+*.log
+*.toc
+*.out
+*.aux
 
 
