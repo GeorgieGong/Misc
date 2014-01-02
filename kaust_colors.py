@@ -9,7 +9,7 @@ def KAUSTColor(color):
         rv = chart[color]
     except KeyError:
         rv = chart['grey']
-    return [a/255 for a in rv]
+    return [a/255.0 for a in rv]
 
 
 
