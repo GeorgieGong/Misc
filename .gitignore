@@ -9,5 +9,9 @@
 *.toc
 *.out
 *.aux
+*.nav
+*.sty~
+*.snm
+*.vrb
 
 
