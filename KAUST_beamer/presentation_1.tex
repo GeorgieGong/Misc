@@ -5,6 +5,11 @@
 %
 % This template has been downloaded from:
 % http://www.LaTeXTemplates.com
+% and modified in an effort to make the slides
+% conform to the official colours of King Abdullah University
+% of Science and Technology
+% latter modification by Juho Happola
+% juho.happola@iki.fi
 %
 % License:
 % CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
@@ -40,7 +45,7 @@
 %\usetheme{Ilmenau}
 %\usetheme{JuanLesPins}
 %\usetheme{Luebeck}
-\usetheme{Madrid}
+\usetheme{Madrid}   %%%% I have no idea as to whether the colours work with other themes
 %\usetheme{Malmoe}
 %\usetheme{Marburg}
 %\usetheme{Montpellier}
@@ -255,7 +260,8 @@ Uncomment the code on this slide to include your own image from the same directo
 
 \begin{loglogaxis}[
 	xlabel={Degrees of freedom},
-	ylabel={$L_2$ Error}
+	ylabel={$L_2$ Error},
+	legend style= {draw=beamer@kaustgrey}
 ]
 \addplot [color=beamer@kaustblue,mark=*] coordinates {
 	(5,8.312e-02)    (17,2.547e-02)   (49,7.407e-03)
