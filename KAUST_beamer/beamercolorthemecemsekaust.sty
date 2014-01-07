@@ -89,15 +89,23 @@
 
 
 \newcommand{\ypebble}[0]{\includegraphics[height=1.3 ex]{./k_yellowpebble.pdf}}
+
 \newcommand{\bpebble}[0]{\includegraphics[height=1.3 ex]{./k_bluepebble.pdf}}
+\newcommand{\bpebblelarge}[0]{\includegraphics[height=1.6 ex]{./k_bluepebble.pdf}}
+\newcommand{\bpebblexlarge}[0]{\includegraphics[height=1.9 ex]{./k_bluepebble.pdf}}
+
 \newcommand{\opebble}[0]{\includegraphics[height=1.3 ex]{./k_orangepebble.pdf}}
 \newcommand{\opebblesmall}[0]{\includegraphics[height=1.1 ex]{./k_orangepebble.pdf}}
 \newcommand{\opebblexsmall}[0]{\includegraphics[height=0.9 ex]{./k_orangepebble.pdf}}
+
 \newcommand{\gpebble}[0]{\includegraphics[height=1.3 ex]{./k_greenpebble.pdf}}
-\setbeamertemplate{itemize items}{\bpebble}
-\setbeamertemplate{enumerate items}{\gpebble}
+
+\setbeamertemplate{itemize items}{\gpebble}
+
+\setbeamertemplate{enumerate items}{\bpebblexlarge \hspace*{-2.3 ex} \color{beamer@kaustwhite} \theenumi }
+
 \setbeamertemplate{section in toc}{\hspace*{1em} \opebble \hspace*{0.2 em}  \inserttocsection}
 \setbeamertemplate{subsection in toc}{\hspace*{2em} \opebblesmall \hspace*{0.2 em} \inserttocsubsection}
-\setbeamertemplate{subsection in toc}{\hspace*{3em} \opebblexsmall \hspace*{0.2 em} \inserttocsubsubsection}
+\setbeamertemplate{subsubsection in toc}{\hspace*{3em} \opebblexsmall \hspace*{0.2 em} \inserttocsubsubsection}
 
 \mode<all>
