@@ -7,9 +7,12 @@ small scripts and templates are quite KAUST specific. Any feedback
 and contributions from the KAUST community are appreciated.
 
 As of now the repository offers:
--Plotting routines in python in KAUST colors
--A "KAUST Compliant" Beamer template
--A template for the SRI UQ Center in KAUST, hopefully usable
+
+- Plotting routines in python in KAUST colors
+
+- A "KAUST Compliant" Beamer template
+
+- A template for the SRI UQ Center in KAUST, hopefully usable
 for other KAUST researchers and students beyond the UQ Center.
 
 Any additions that might be of use to KAUST users are welcomed.
