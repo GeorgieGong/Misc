@@ -23,7 +23,7 @@ the initiator at juho.happola@iki.fi
 As far as the copyrights are concerned, this is a compilation
 of multiple items that are distributed under different terms.
 Consult individual files to see more specific details.
-Logos and trademarks are owned by their respectible owners,
+Logos and trademarks are owned by their respective owners,
 but included in the repository for conciseness.
 
 
