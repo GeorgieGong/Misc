@@ -1,0 +1,60 @@
+\documentclass[36pt, portrait, a0, largefonts,plainboxedsections]{sciposter}
+%path
+% Packages
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{times,lmodern}
+\usepackage{amsmath,amssymb}
+\usepackage{multicol}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{algorithmic}
+%\usepackage{wallpaper}
+
+% TEMPLATE PARAMETERS
+\setlength{\parskip}{0.002\textheight}
+\newcommand{\imsize}{0.49\columnwidth}
+\definecolor{mainCol}{rgb}{1,1,1}%{.82,.94,.98}
+\definecolor{BoxCol}{rgb}{0.8,0.3,0.1}
+\definecolor{SectionCol}{rgb}{1,1,1}
+\renewcommand{\titlesize}{\huge}
+\renewcommand{\sectionsize}{\Large}
+\setmargins[3cm]
+
+% HEADER
+%\CenterWallPaper{1}{kaust_cuq_logo_left}
+\setlength{\titlewidth}{0.55\textwidth}
+\setlength{\logowidth}{0.23\textwidth}
+
+
+\leftlogo[1]{kaust_cuq_logo_left}
+\rightlogo[1]{kaust_cuq_logo_right}
+%\leftlogo[0.7]{kaust}
+
+% POSTER CONTENT
+
+\title{This is the title}
+
+\author{Name and Surname}
+\institute{Affiliation}
+%\\ King Abdullah University of Science and Technology (KAUST), Saudi Arabia
+\email{raul.tempone@kaust.edu.sa,~ http://{sri-uq.kaust.edu.sa}}
+
+\begin{document}
+
+\maketitle
+\vspace{-50pt}
+
+\begin{multicols}{2}
+\def\columnseprulecolor{\color[rgb]{0.501,0.463,0.435}}
+
+
+\section*{KEY SCIENCE ELEMENTS} 
+Here you can write a lot of things
+%-------------
+\vfill
+\section*{VISION AND MISSION}
+the fonts are nice and bigger
+\end{multicols}
+\end{document}
+ 
