@@ -1,0 +1,245 @@
+\documentclass[final,english]{beamer}
+ \usepackage{multicol}
+  \usepackage{times}
+  \usepackage{amsmath,amsthm, amssymb, latexsym}
+  \boldmath
+  \usepackage[english]{babel}
+  \usepackage[latin1]{inputenc}
+  \usepackage[orientation=portrait,size=custom,width=75,height=93,scale=1]{beamerposter}
+  
+\usepackage{ragged2e}
+
+\definecolor{CEMSE}{rgb}{0.87,0.38,0.13}
+
+
+\mode<presentation>{
+\usefonttheme{structurebold}
+% serif,structureitalicserif
+%  structuresmallcapsserif, structurebold
+% \setbeamercovered{transparent}
+%gets rid of bottom navigation bars
+\setbeamertemplate{footline}{}
+%gets rid of navigation symbols
+\setbeamertemplate{navigation symbols}{}
+\useoutertheme{default}
+}
+\usepackage[]{beamerthemeboxes}
+% beamerthemebars beamerthemeboxes
+% beamerthemeclassic beamerthemelined
+% beamerthemeplain beamerthemeshadow
+% beamerthemesidebar beamerthemesidebar-tab
+% beamerthemesidebardark beamerthemesidebardark-tab
+% beamerthemetree beamerthemetree-bars
+% beamerthemesplit
+
+\makeatletter
+\renewcommand{\itemize}[1][]{%
+  \beamer@ifempty{#1}{}{\def\beamer@defaultospec{#1}}%
+  \ifnum \@itemdepth >2\relax\@toodeep\else
+    \advance\@itemdepth\@ne
+    \beamer@computepref\@itemdepth% sets \beameritemnestingprefix
+    \usebeamerfont{itemize/enumerate \beameritemnestingprefix body}%
+    \usebeamercolor[fg]{itemize/enumerate \beameritemnestingprefix body}%
+    \usebeamertemplate{itemize/enumerate \beameritemnestingprefix body begin}%
+    \list
+      {\usebeamertemplate{itemize \beameritemnestingprefix item}}
+      {\def\makelabel##1{%
+          {%
+            \hss\llap{{%
+                \usebeamerfont*{itemize \beameritemnestingprefix item}%
+                \usebeamercolor[fg]{itemize \beameritemnestingprefix item}##1}}%
+          }%
+        }%
+      }
+  \fi%
+  \beamer@cramped%
+  \justifying% NEW
+  %\raggedright% ORIGINAL
+  \beamer@firstlineitemizeunskip%
+}
+\makeatother
+ 
+%  \usetheme{PaloAlto}
+%  \usecolortheme[named=kugreen]{structure}
+%  \useinnertheme{circles}
+%  \usefonttheme[onlymath]{serif}
+%  \setbeamercovered{transparent}
+% \setbeamertemplate{blocks}[rounded][shadow=true]
+
+% \usetheme{Warsaw}
+% \structure{..}
+% or ...
+% \usetheme{Antibes}     % tree outline, neat
+% \usetheme{JuanLesPins} % like Antibes, with shading
+%\usetheme{Bergen}      % outline on side
+% \usetheme{Luebeck}     % like Warsaw, square sides
+%\usetheme{Berkeley}    % interesting left bar outline
+% \usetheme{Madrid}       % clean, nice.  7/12 page numbers
+% \usetheme{Berlin}     % dots show slide number
+% \usetheme{Malmoe}      % OK, plain, unshaded
+% \usetheme{Boadilla}    % nice, white bg, no top bar
+% \usetheme{Marburg}     % nice, outline on right
+% \usetheme{boxes}       % ???
+% \usetheme{Montpellier} % tree outline on top, plainish white
+%\usetheme{Copenhagen}  % like Warsaw
+% \usetheme{PaloAlto}    % looks good
+%\usetheme{Darmstadt}   % like Warsaw with circle outline
+%\usetheme{Pittsburgh}
+% \usetheme{default}
+% \usetheme{Rochester}  % like boxy, unshaded warsaw
+%\usetheme{Dresden}     % circle outline on top
+% \usetheme{Singapore}   % purple gradient top
+%\usetheme{Frankfurt}   % like Warsaw with circle outline on top
+%\usetheme{Szeged}
+% \usetheme{Goettingen}  % light purple right bar outline
+% \usetheme{Warsaw}
+% \usetheme{Hannover}   % like Goett with bar on left
+%\usetheme{compatibility}
+% \usetheme{Ilmenau}
+% \usetheme{AnnArbor}
+% \usetheme{Szeged}
+
+
+%
+%\setbeamercolor{title}{fg=red!80!black,bg=red!20!white}
+%\colorlet{mystruct}{structure} % Save current structure
+%\colorlet{structure}{magenta} % New structure
+%\usestructuretemplate{\color{structure}}{}
+%\beamertemplateshadingbackground{yellow!40}{white!70} % New background
+
+%\setbeamercovered{transparent}
+% or whatever (possibly just delete it)
+
+% \usecolortheme{fly}
+% \usecolortheme{orchid}
+%\usecolortheme{albatross}
+% \usecolortheme{beetle}
+% \usecolortheme{crane}
+%\usecolortheme{rose}
+% \usecolortheme{seahorse}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{beaver}
+% \usecolortheme{whale}
+% \usecolortheme{dolphin}
+% \usecolortheme{wolverine}
+% \usecolortheme{sidebartab}
+
+% \setbeamertemplate{background canvas}[vertical shading][bottom=red!40,top=white!30]
+% \setbeamertemplate{background canvas}{\includegraphics
+%         [width=\paperwidth,height=\paperheight]{alps.jpg}}
+
+% seems to fix typewriter font in outline header:
+%\beamertemplateballitem
+
+%----------------------------------
+
+  
+%\usepackage{biblatex}
+%\usepackage[square]{natbib}
+%\usepackage[square,sort&compress]{natbib}
+%\def\newblock{}
+%\newcommand{\newblock}{}
+
+%------END NEW COMMANDS
+\setbeamertemplate{headline}{}
+\setbeamertemplate{footline}{}
+
+\defbeamertemplate*{title page}{customized}[1][]{}
+\setbeamertemplate{frametitle}{}
+\setbeamertemplate{navigation symbols}{}
+
+
+\usebackgroundtemplate{}
+\defbeamertemplate*{footline}{infolines theme}{}
+
+\setbeamercolor*{block title}{fg=CEMSE,bg=white}
+\setbeamercolor*{block title example}{fg=CEMSE,bg=white}
+\setbeamercolor*{block title alerted}{fg=CEMSE,bg=white}
+\setbeamercolor*{alerted text}{fg=black}
+\setbeamercolor*{itemize item}{fg=CEMSE}
+\setbeamercolor*{bibliography item}{fg=black}
+\setbeamercolor*{bibliography entry title}{fg=black}
+\setbeamercolor*{bibliography entry author}{fg=black}
+\setbeamercolor*{bibliography entry journal}{fg=black}
+\setbeamerfont*{block title}{shape=\scshape, series=\bfseries, size={\fontsize{32}{34}}}
+\setbeamerfont*{block title example}{shape=\scshape, series=\bfseries, size={\fontsize{32}{34}}}
+\setbeamerfont*{block title alerted}{shape=\scshape, series=\bfseries, size={\fontsize{32}{34}}}
+\setbeamerfont*{alerted text}{shape=\itshape, size={\fontsize{30}{32}}}
+\setbeamerfont*{normal text}{shape=\itshape, size={\fontsize{30}{32}}}
+\setbeamerfont*{block body}{size={\fontsize{30}{32}}}
+\setbeamerfont*{block body example}{ size={\fontsize{30}{32}}}
+\setbeamerfont*{block body alerted}{ size={\fontsize{30}{32}}}
+
+\usepackage[scaled]{helvet}
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+  \begin{document}
+  \linespread{1.2}
+  \begin{frame}[plain]{} 
+%  \vspace{20pt}
+%  \maketitle
+%        {\tiny tiny}\par
+%      {\scriptsize scriptsize}\par
+%\footnotesize
+%\small
+%\normalsize
+%\large
+%\Large
+%\LARGE
+%      {\veryHuge VeryHuge}\par
+%      {\VeryHuge VeryHuge}\par
+%      {\VERYHuge VERYHuge}\par
+%
+      \begin{columns}
+      \column{0.5\textwidth}   
+    \begin{exampleblock}{ 1. Section title}
+introduction
+    \end{exampleblock}
+             \vfill
+
+
+        \begin{block}{2. Section title}    
+section 2
+        \end{block}
+             \vfill
+
+
+             
+      \column{0.5\textwidth}
+     
+        \begin{block}{ 4. Section Title}    
+section 4        
+        \end{block}
+             \vfill
+             
+             
+        \begin{block}{ 5. }    
+         section 5
+\end{block}
+             \vfill
+
+      
+    \begin{alertblock}{References}    
+{ \footnotesize
+  \begin{thebibliography}{1}
+  \setbeamertemplate{bibliography item}[text]
+  \bibitem{blunt} Bijeljic, B., Muggeridge, A. H., Blunt, M. J., Pore-scale modeling of
+  longitudinal dispersion, Water Resources Research, 2004.
+  \bibitem{hakon} Hoel, Hakon, Erik Von Schwerin, Anders Szepessy, and Raúl Tempone. "Adaptive multilevel monte carlo simulation." In Numerical Analysis of Multiscale Computations, pp. 217-234. Springer Berlin Heidelberg, 2012.
+  \bibitem{oden} Oden, J. T., Prudencio, E. E., Bauman, P. T., Virtual model validation of complex multi scale systems: applications to nonlinear elastostatics. ICES report, 2012.
+  \bibitem{sahimi} Sahimi, M., Flow and transport in porous media and fractured rock: from classical methods to modern approaches, VCH, 1995
+  \bibitem{tosco} Tosco, T., Sethi, R.,Transport of non-Newtonian suspensions of highly concentrated micro- and nanoscale iron particles in porous media: a modeling approach, Environmental science \& technology, 2010.
+\bibitem{tosco2} Tosco, T., Marchisio, D. L., Lince, F. and Sethi,R., Extension of the Darcy-Forchheimer Law for Shear-Thinning Fluids and Validation via Pore-Scale Flow Simulations, Transport in Porous Media, 2009.
+  \end{thebibliography}
+  }
+    \end{alertblock}
+             \vfill
+
+      \end{columns}
+             \vfill
+
+  \end{frame}
+\end{document}
